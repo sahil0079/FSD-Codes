@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Selectors</title>
+
+    <style>
+        /* div{
+            background-color: green;
+        } */
+        /* * {
+            background-color: green;
+            color: darkblue;
+        } */
+
+        /* .green{
+            background-color: green;
+        } */
+        /* #red {
+            background-color: red;
+        } */
+
+        /* combination of selectors */
+        /* 
+        div.green.text-red {
+            background-color: green;
+            color: red;
+        } */
+
+        /* span,
+        li {
+            background-color: aqua;
+        } */
+        /* span,
+        li.green {
+            background-color: aqua;
+        } */
+        /* 
+        ol li {
+            background-color: green;
+        } */
+        /* div strong {
+            background-color: blue;
+        } */
+        /* p>strong {
+            background-color: blue;
+        } */
+        /* li.green~li {
+            background-color: green;
+        } */
+        /* li.green+li {
+            background-color: green;
+        } */
+        /* li.green+li.red {
+            background-color: green;
+        } */
+
+        /* li:hover {
+            background-color: gray;
+            margin-left: 200px;
+        } */
+        /* input:focus {
+            background-color: aqua;
+        } */
+        /* input:required {
+            background-color: aqua;
+        } */
+        /* li:last-child {
+            background-color: brown;
+        } */
+        span:only-child {
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <p>
+            <strong>This is nested text</strong>
+        </p>
+    </div>
+    <input>
+    <div class="green text-red">This is a div element</div>
+    <div>This is a div element 2</div>
+
+    <div>
+        <span id="red">This is inline element</span>
+        <span>This is inline element</span>
+
+    </div>
+
+    <ol>
+        <li class="green">This is item 1</li>
+        <li>This is item 2</li>
+        <li>This is item 3</li>
+        <li>This is item 4</li>
+        <li class="red">This is item 5</li>
+    </ol>
+</body>
+
+</html>

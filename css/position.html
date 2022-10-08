@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position in CSS</title>
+
+    <!-- a position static is not positioned in any special or unique way. It is just applicable to all the elements by default. It is always positioned according to the normal flow of a web page. static position elements have no affect on top right left and bottom properties -->
+
+    <!-- relative position -> when an element is positioned relative to its normal position -->
+
+    <!-- absolute position -> it is positioned relative to the nearest position ancestor and if not positioned ancestor it uses the vieport or body element as the parent -->
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .parent {
+            background-color: green;
+            padding-bottom: 10px;
+            position: relative;
+            height: 500vh;
+
+        }
+
+        .child {
+            width: 90%;
+            height: 40px;
+            margin: 10px;
+        }
+
+        .child-one {
+            background-color: red;
+            /* position: relative;
+            left: 100px; */
+            /* position: absolute;
+            top: 10px; */
+            /* width: 100px; */
+            position: fixed;
+            top: 0;
+        }
+
+        .child-two {
+            background-color: blue;
+        }
+
+        .child-three {
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Position in CSS</h1>
+
+
+    <div class="parent">
+        parent
+
+        <div class="child child-one">One</div>
+        <div class="child child-two">Two</div>
+        <div class="child child-three">Three</div>
+    </div>
+
+</body>
+
+</html>
