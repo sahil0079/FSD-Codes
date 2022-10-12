@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container {
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: flex-end;
+            background-color: black;
+        }
+
+        .flex-container>div {
+            background-color: aqua;
+            margin: 10px;
+            padding: 20px;
+            font-size: 26px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- to define a flex container -->
+    <!-- flex layout must have a parent element with display property of value flex -->
+    <!-- Direct Child elements of the flexible container automatically becom flex items or flexible -->
+
+
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+
+    </div>
+
+</body>
+
+</html>

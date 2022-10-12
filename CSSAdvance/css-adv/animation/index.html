@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+
+    <style>
+        .parent {
+            width: 500px;
+            height: 500px;
+            background-color: aqua;
+        }
+
+        .circle {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            border-radius: 50%;
+            background-color: green;
+            /* animation-name: change-color;
+            animation-duration: 3s; */
+            /* animation-delay: 2s; */
+            /* It specifies the delay for the starting of the animation */
+            /* animation-iteration-count: 3; */
+
+            /* animation-direction: alternate; */
+            /* animation-timing-function: ease-in-out; */
+            /* animation-timing-function: cubic-bezier(0, -0.44, 1, 2.68); */
+
+            animation: change-color 3s ease-in-out 2s 3 alternate;
+
+        }
+
+        /* @keyframes change-color {
+            from {
+                background-color: green;
+            }
+
+            to {
+                background-color: brown;
+            }
+        } */
+        /* @keyframes change-color {
+
+            0% {
+                background-color: green;
+            }
+
+            25% {
+                background-color: aqua;
+            }
+
+            50% {
+                background-color: red;
+            }
+
+            100% {
+                background-color: black;
+            }
+
+        } */
+        @keyframes change-color {
+
+            0% {
+                background-color: green;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: blue;
+                left: 300px;
+                top: 0;
+            }
+
+            50% {
+                background-color: blueviolet;
+                left: 300px;
+                top: 300px;
+            }
+
+            75% {
+                background-color: black;
+                left: 0px;
+                top: 300px;
+            }
+
+            100% {
+                background-color: green;
+                left: 0px;
+                top: 0px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Animation</h1>
+
+    <div class="parent">
+        <div class="circle"></div>
+
+    </div>
+
+</body>
+
+</html>
