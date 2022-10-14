@@ -1,0 +1,33 @@
+.gallery-container>h1 {
+    position: sticky;
+    top: 0;
+    text-align: center;
+    z-index: 2;
+    background-color: aquamarine;
+}
+
+.images-container {
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-item {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.image-item>img {
+    width: 400px;
+    height: 400px;
+    transition-duration: 3s;
+    transition-delay: 0.5s;
+
+}
+
+.image-item>img:hover {
+
+    transform: scale(1.2);
+}
