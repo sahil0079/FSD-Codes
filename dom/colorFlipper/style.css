@@ -1,0 +1,79 @@
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h3,
+h2 {
+    text-transform: capitalize;
+    line-height: 1.25rem;
+    letter-spacing: 0.4rem;
+}
+
+.nav-container {
+    background-color: white;
+    height: 3rem;
+    display: grid;
+    align-items: center;
+}
+
+.nav-center {
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links {
+    display: flex;
+}
+
+li a {
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-right: 1rem;
+    letter-spacing: 0.2rem;
+}
+
+li a:hover {
+    cursor: pointer;
+    color: lightseagreen;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    height: 40vh;
+}
+
+.container h2 {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.color {
+    color: rgb(76, 76, 234);
+}
+
+.btn {
+    text-transform: uppercase;
+    background: transparent;
+    color: black;
+    cursor: pointer;
+    letter-spacing: 0.4rem;
+    border: 2px solid black;
+    font-size: 1rem;
+    padding: 0.75rem 1.25rem;
+}
+
+.btn:hover {
+    color: white;
+    background-color: black;
+}
