@@ -1,0 +1,28 @@
+.main-container {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    text-align: center;
+}
+
+#value {
+    font-size: 5rem;
+    font-weight: bolder;
+}
+
+.btn {
+    text-transform: uppercase;
+    background: transparent;
+    padding: 0.37rem 0.75rem;
+    letter-spacing: 0.2rem;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 2)
+}
+
+.btn:hover {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
