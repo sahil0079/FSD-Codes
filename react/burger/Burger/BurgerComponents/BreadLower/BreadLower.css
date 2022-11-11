@@ -1,0 +1,8 @@
+.breadlower {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px 5px 12px 12px;
+    background-color: orange;
+    border: 2pz solid orange;
+    margin: auto;
+}
