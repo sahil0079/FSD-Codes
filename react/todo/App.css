@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+}
+
+.app {
+  padding: 2% 2%;
+  text-align: center;
+}
+
+.app-header {
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.input {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid grey;
+  border-radius: 4px;
+
+}
+
+.button {
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  text-align: center;
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+.todoLabel {
+  font-size: 30px;
+}
+
+.todo {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.todo>h4 {
+  margin: 0 5px;
+}
