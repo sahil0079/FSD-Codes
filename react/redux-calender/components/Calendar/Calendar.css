@@ -1,0 +1,34 @@
+.calender-container {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 70px;
+    text-transform: uppercase;
+}
+
+.calender-inner-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#calender-display {
+
+    font-size: 30px;
+    border: 1px solid white;
+
+}
+
+.calender-container-child {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+.month-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
