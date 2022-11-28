@@ -1,0 +1,39 @@
+{
+  "books": [
+    {
+      "title": "Origins",
+      "author": "Dan Brown",
+      "genre": "Comedy",
+      "summary": "THis is the 5th installment of the series",
+      "id": 1
+    },
+    {
+      "title": "Origins",
+      "author": "Dan Brown",
+      "genre": "Comedy",
+      "summary": "THis is the 5th installment of the series",
+      "id": 2
+    },
+    {
+      "title": "Origins",
+      "author": "Dan Brown",
+      "genre": "Comedy",
+      "summary": "THis is the 5th installment of the series",
+      "id": 3
+    },
+    {
+      "title": "Origins",
+      "author": "Dan Brown",
+      "genre": "Comedy",
+      "summary": "THis is the 5th installment of the series",
+      "id": 4
+    },
+    {
+      "title": "Origins",
+      "author": "Dan Brown",
+      "genre": "Comedy",
+      "summary": "THis is the 5th installment of the series",
+      "id": 5
+    }
+  ]
+}
