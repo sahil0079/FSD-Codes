@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+
+  padding-left: 20px;
+  padding-top: 20px;
+  height: 50vh;
+}
