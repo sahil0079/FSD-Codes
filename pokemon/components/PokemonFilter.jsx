@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import styled from '@emotion/styled'
+import PokemonContext from '../PokemonContext'
 
 
 const Input = styled.input`
@@ -10,8 +11,14 @@ const Input = styled.input`
 `
 
 function PokemonFilter() {
+    const { filter, filterSet } = useContext(PokemonContext)
+    // console.log('filter', filter)
     return (
-        <Input type='text' />
+        <Input
+            value={filter}
+            type='text'
+            onChange={(event) => filterSet(event.target.value)}
+        />
     )
 }
 

@@ -5,6 +5,7 @@ import PokemonFilter from './components/PokemonFilter';
 import PokemonTable from './components/PokemonTable';
 import PokemonContext from './PokemonContext';
 import { Button } from '@mui/material'
+import PokemonInfo from './components/PokemonInfo';
 
 import { useAuth0 } from '@auth0/auth0-react'
 
@@ -26,9 +27,16 @@ const ButtonContainer = styled.div`
   padding-top: 20em;
 `
 const ButtonContainerTwo = styled.div`
+  display:flex;
+  justify-content: space-around;
   margin: auto;
-  width: 40px;
+  width: 400px;
   paddin: 4em;
+`
+const TwoColumnLayout = styled.div`
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-column-gap: 1rem
 `
 
 function App() {
@@ -37,7 +45,7 @@ function App() {
   const [selectedPokemon, selectedPokemonSet] = useState(null)
 
   const { loginWithRedirect, user, isAuthenticated, logout } = useAuth0()
-  console.log(isAuthenticated, user)
+  // console.log(isAuthenticated, user)
 
   useEffect(() => {
 
@@ -63,6 +71,7 @@ function App() {
 
       {isAuthenticated ? (
         <ButtonContainerTwo>
+          <h4> Hi {user.name} </h4>
           <Button
             variant='contained'
             color='primary'
@@ -89,12 +98,14 @@ function App() {
       {isAuthenticated && (
         <PageContainer>
           <Title>Pokemon Search</Title>
+          <TwoColumnLayout>
+            <div>
+              <PokemonFilter />
+              <PokemonTable />
+            </div>
 
-          <div>
-            <PokemonFilter />
-            <PokemonTable />
-          </div>
-
+            <PokemonInfo />
+          </TwoColumnLayout>
         </PageContainer>
       )}
 
